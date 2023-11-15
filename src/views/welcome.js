@@ -12,13 +12,12 @@ export const renderWelcome = (navigateTo) => {
 
   const welcome = document.createElement('form');
   welcome.setAttribute('id', 'welcome');
-  welcome.setAttribute('method', 'GET');
   divWelcome.appendChild(welcome);
 
   const inputUser = document.createElement('input');
   inputUser.setAttribute('type', 'email');
   inputUser.classList.add('input-user');
-  inputUser.setAttribute('placeholder', 'Correo/Usuario');
+  inputUser.setAttribute('placeholder', 'Correo');
   inputUser.value = '';
   welcome.appendChild(inputUser);
 

@@ -8,16 +8,12 @@ export const createPost = (navigateTo) => {
   divCreatePost.appendChild(form);
 
   const urlImg = document.createElement('input');
-  urlImg.setAttribute('required', '');
   urlImg.setAttribute('id', 'url-img');
   urlImg.setAttribute('type', 'text');
   urlImg.setAttribute('placeholder', 'URL de tu foto');
   urlImg.value = '';
   form.appendChild(urlImg);
 
-  urlImg.addEventListener('blur', () => {
-
-  });
   const textArea = document.createElement('textarea');
   textArea.setAttribute('id', 'text-area');
   textArea.setAttribute('placeholder', 'Escribe en 140 palabras un encabezado para tu foto:');

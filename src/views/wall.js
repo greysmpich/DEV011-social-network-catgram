@@ -134,7 +134,9 @@ export const renderWall = (navigateTo) => {
 
             isEditing = false;
           });
-        } else { alert('Ya estás editando un post'); }
+        } else {
+          alert("Ya estás editando un post");
+        }
       });
 
       const imgPost = document.createElement("img");
@@ -176,11 +178,11 @@ export const renderWall = (navigateTo) => {
               "Este post irá a la caja de arena, seguro que deseas eliminarlo?"
             )
           ) {
-            deletePost(postId)
-              .then(() => {
-                liCard.remove();
-              })
-              .catch((error) => {});
+            deletePost(postId);
+            // .then(() => {
+            //   liCard.remove();
+            // })
+            // .catch((error) => {});
           }
         } else {
           alert(
