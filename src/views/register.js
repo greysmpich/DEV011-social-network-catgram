@@ -6,14 +6,13 @@ export const renderRegister = (navigateTo) => {
 
   const registerForm = document.createElement('form');
   registerForm.setAttribute('id', 'register-form');
-  registerForm.setAttribute('method', 'GET');
 
   divRegister.appendChild(registerForm);
 
   const inputUser = document.createElement('input');
   inputUser.setAttribute('type', 'email');
   inputUser.classList.add('input-user-register');
-  inputUser.setAttribute('placeholder', 'Correo/Usuario');
+  inputUser.setAttribute('placeholder', 'Correo');
   inputUser.value = '';
   registerForm.appendChild(inputUser);
 
